@@ -6,6 +6,8 @@ using PrimerParcial.Models;
 
 namespace PrimerParcial.Controllers
 {
+    [ApiController]
+    [Route("[controller]")]
     public class TitularController(ITitularRepository _titularRepository) : Controller
     {
         [HttpGet("GetTitularesExtranjeros")]
